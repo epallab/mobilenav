@@ -1,38 +1,101 @@
-.App {
-  text-align: center;
+.home-main {
+  height: 100dvh;
+  width: 100dvw;
+  background-color: #46279f;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.btn-container {
+  width: 340px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #222433;
+  border-radius: 15px;
+  box-shadow: -1px -1px 6px #623ad0, /* Top-left shadow */ 1px 1px 6px #2a136a,
+    /* Bottom-right shadow */ -8px -8px 8px #191d28 inset,
+    /* Top-left inner shadow */ 8px 8px 8px #303241 inset; /* Bottom-right inner shadow */
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.btn-main {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  cursor: pointer;
+  border: none;
+  color: #12151e;
+  background-color: rgba(255, 255, 255, 0);
+  font-family: inherit;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.icon-main {
+  position: absolute;
+}
+.icon {
+  position: relative;
+}
+
+.icon div:nth-child(1) {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #28fc52;
+  border-radius: 50px;
+  box-shadow: -2px -2px 6px #191d28, /* Top-left shadow */ 2px 2px 6px #191d28,
+    /* Bottom-right shadow */ -3px -3px 3px #0d9629 inset,
+    /* Top-left inner shadow */ 3px 3px 3px #79fb93 inset; /* Bottom-right inner shadow */
+}
+.icon div:nth-child(2) {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50px;
+  background-color: #222433;
+  box-shadow: -2px -2px 4px #68ff86, /* Top-left shadow */ 2px 2px 4px #0b5a1b,
+    /* Bottom-right shadow */ -4px -4px 4px #12151e inset,
+    /* Top-left inner shadow */ 4px 4px 4px #3b3d4f inset; /* Bottom-right inner shadow */
+}
+.icon div:nth-child(3) {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   color: white;
+  font-size: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.App-link {
-  color: #61dafb;
+.btn-name {
+  position: absolute;
+  top: 2px;
+  background-color: #c6c9cf;
+  border-radius: 10px;
+  padding: 2px 8px;
+  font-size: 10px;
+  font-weight: 600;
+  box-shadow: -0.5px -0.5px 2px #ffffff2a,
+    /* Top-left shadow */ 0.5px 0.5px 2px #7a797d41,
+    /* Bottom-right shadow */ -1px -1px 4px #47474a inset,
+    /* Top-left inner shadow */ 1px 1px 4px #ffffff inset; /* Bottom-right inner shadow */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.active-dot {
+  position: absolute;
+  top: 25px;
+  border-radius: 10px;
+  background-color: #28fc52;
+  box-shadow: -0.5px -0.5px 2px #28fc52,
+    /* Top-left shadow */ 0.5px 0.5px 2px #28fc52,
+    /* Bottom-right shadow */ -1px -1px 4px #28fc52 inset,
+    /* Top-left inner shadow */ 1px 1px 4px #28fc52 inset; /* Bottom-right inner shadow */
 }
